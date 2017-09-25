@@ -10,7 +10,7 @@ import javafx.scene.control.Spinner;
 import javafx.scene.control.SpinnerValueFactory;
 import poids.modele.Poids;
 
-public class ControleurPoids {
+public class ControleurPoids2 {
 	@FXML
 	private Slider slidCirconf;
 	@FXML
@@ -26,7 +26,7 @@ public class ControleurPoids {
 	* Le constructeur est appelé avant la méthode initialize()
 	* 
 	*/
-	public ControleurPoids(){	
+	public ControleurPoids2(){	
 	}
 	
 	/**
@@ -53,6 +53,7 @@ public class ControleurPoids {
 		lCirconf.setText(String.valueOf(circonference));
 		calculEtAffichage();
 	}
+	
 	
 	/**
 	* Est exécutée pour calculer et afficher le poids.
@@ -89,12 +90,5 @@ public class ControleurPoids {
 		calculEtAffichage();
 	}
 	
-	/**
-	* Ferme l'application.
-	*/
-	@FXML
-	private void handleExit() {
-	System.exit(0);
-	}
 	
 }

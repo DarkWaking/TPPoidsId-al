@@ -4,12 +4,28 @@ import java.text.DecimalFormat;
 public class Poids {
 	private float circonference	;
 	private int taille;
+	private int age;
+	private int coefficient;
 	
 	private final DecimalFormat df = new DecimalFormat("##0.000 kg");
 	
 	public Poids(float circonference, int taille){
 		this.circonference = circonference;
 		this.setTaille(taille);
+	}
+	
+	public Poids(int taille, int age, int coefficient){
+		this.setTaille(taille);
+		this.age = age;
+		this.coefficient = coefficient;
+	}
+
+	public int getAge() {
+		return age;
+	}
+
+	public void setGenre(int age) {
+		this.age = age;
 	}
 
 	public float getCirconference() {
@@ -33,6 +49,13 @@ public class Poids {
 	
 	poids = ((taille-100) + (4*circonference)) / 2;
 	return poids;
+	}
+	
+	public double calculPoidsMC() {
+		double poids;
+		
+		poids = ((taille-100) + (age/10)*coefficient);
+		return poids;
 	}
 	
 	@Override
