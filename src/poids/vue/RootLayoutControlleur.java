@@ -39,7 +39,7 @@ public class RootLayoutControlleur {
     
    
     @FXML
-    private void goFormuleMC () throws IOException {
+    private void goFormuleMC() throws IOException {
     	mainApp.showFormuleMC();
     }
     

@@ -8,7 +8,7 @@
 
 <AnchorPane prefHeight="200.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="poids.vue.ControleurPoids1">
    <children>
-      <Label fx:id="lPoids" layoutX="80.0" layoutY="130.0" text="Votre poids idéal :" />
+      <Label fx:id="lPoids" layoutX="68.0" layoutY="150.0" text="Votre poids idéal :" />
       <Label layoutX="48.0" layoutY="15.0" text="Circonférence" />
       <Label layoutX="63.0" layoutY="64.0" text="Taille" />
       <Label fx:id="lCirconf" layoutX="339.0" layoutY="12.0" text="17.1" textFill="#f21313" AnchorPane.rightAnchor="26.0">

@@ -13,6 +13,7 @@ import poids.vue.RootLayoutControlleur;
 public class MainApp extends Application {
 	private Stage primaryStage;
 	private BorderPane rootLayout;
+	private AnchorPane Formule;
 	
 	/**
 	* Constructor
@@ -52,9 +53,9 @@ public class MainApp extends Application {
 	
 	public void showFormuleMD() throws IOException{
 		FXMLLoader loader = new FXMLLoader();
-		loader.setLocation(MainApp.class.getResource("vue/VuePoidsMD.fxml"));
-	    AnchorPane FormuleMD = loader.load();
-		rootLayout.setCenter(FormuleMD);
+		loader.setLocation(MainApp.class.getResource("./vue/VuePoidsMD.fxml"));
+	    Formule = loader.load();
+		rootLayout.setCenter(Formule);
 		primaryStage.setTitle("Poids idéal - Méthode Monnerot-Dumaine");
 		
 		
@@ -64,9 +65,9 @@ public class MainApp extends Application {
 	
 	public void showFormuleMC() throws IOException{
 		FXMLLoader loader = new FXMLLoader();
-		loader.setLocation(MainApp.class.getResource("./vue/VuePoidsMC.fxml"));
-	    AnchorPane FormuleMC = loader.load();
-		rootLayout.setCenter(FormuleMC);
+		loader.setLocation(MainApp.class.getResource("vue/VuePoidsMC.fxml"));
+		Formule = loader.load();
+		rootLayout.setCenter(Formule);
 		primaryStage.setTitle("Poids idéal - Méthode CREFF");
 		
 		

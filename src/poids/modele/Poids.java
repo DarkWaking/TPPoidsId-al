@@ -5,8 +5,16 @@ public class Poids {
 	private float circonference	;
 	private int taille;
 	private int age;
-	private int coefficient;
+	private double coefficient;
 	
+	public double getCoefficient() {
+		return coefficient;
+	}
+
+	public void setCoefficient(double coefficient) {
+		this.coefficient = coefficient;
+	}
+
 	private final DecimalFormat df = new DecimalFormat("##0.000 kg");
 	
 	public Poids(float circonference, int taille){
@@ -14,7 +22,7 @@ public class Poids {
 		this.setTaille(taille);
 	}
 	
-	public Poids(int taille, int age, int coefficient){
+	public Poids(int taille, int age, double coefficient){
 		this.setTaille(taille);
 		this.age = age;
 		this.coefficient = coefficient;
@@ -24,13 +32,15 @@ public class Poids {
 		return age;
 	}
 
-	public void setGenre(int age) {
+	public void setAge(int age) {
 		this.age = age;
 	}
 
 	public float getCirconference() {
 		return circonference;
 	}
+
+	
 
 	public void setCirconference(float circonference) {
 		this.circonference = circonference;
